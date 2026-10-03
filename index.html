@@ -1,0 +1,878 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pioneer Credit Limited | Business Financing</title>
+
+    <meta name="description" content="Pioneer Credit Limited provides business financing from KSh 10,000 to KSh 150,000. Apply online and book your business assessment.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f7f9fc;
+            color: #172033;
+            line-height: 1.6;
+        }
+
+        /* ================= HEADER ================= */
+
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e9f0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: auto;
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #0d3b73, #f2a900);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .logo-text h2 {
+            color: #0d3b73;
+            font-size: 20px;
+            line-height: 1.1;
+        }
+
+        .logo-text span {
+            color: #e89b00;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #172033;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #e89b00;
+        }
+
+        .nav-button {
+            background: #0d3b73;
+            color: white !important;
+            padding: 10px 18px;
+            border-radius: 8px;
+        }
+
+        /* ================= HERO ================= */
+
+        .hero {
+            background: linear-gradient(135deg, #0d3b73 0%, #124b8d 65%, #e6a000 150%);
+            color: white;
+            padding: 90px 25px;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #ffbd32;
+        }
+
+        .hero p {
+            font-size: 19px;
+            max-width: 650px;
+            margin-bottom: 30px;
+            color: #eaf2ff;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .primary-btn,
+        .secondary-btn {
+            padding: 14px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            cursor: pointer;
+            border: none;
+            font-size: 15px;
+        }
+
+        .primary-btn {
+            background: #f2a900;
+            color: #13233b;
+        }
+
+        .secondary-btn {
+            background: white;
+            color: #0d3b73;
+        }
+
+        .hero-card {
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 18px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+        }
+
+Mkorea Goat, [10/3/2026 2:35 PM]
+.hero-card h3 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .loan-highlight {
+            font-size: 42px;
+            font-weight: bold;
+            color: #ffbd32;
+            margin-bottom: 5px;
+        }
+
+        /* ================= SECTIONS ================= */
+
+        section {
+            padding: 75px 25px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            color: #0d3b73;
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #667085;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* ================= NOTICE CARDS ================= */
+
+        .notice-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .notice {
+            background: white;
+            padding: 25px;
+            border-radius: 14px;
+            border: 1px solid #e5e9f0;
+            box-shadow: 0 5px 20px rgba(20,40,80,0.05);
+        }
+
+        .notice-icon {
+            width: 45px;
+            height: 45px;
+            background: #eef5ff;
+            color: #0d3b73;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .notice h3 {
+            color: #0d3b73;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+
+        .notice p {
+            color: #667085;
+            font-size: 14px;
+        }
+
+        /* ================= LOAN OPTIONS ================= */
+
+        .loan-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .loan-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid #e5e9f0;
+            transition: 0.25s;
+        }
+
+        .loan-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(13,59,115,0.1);
+        }
+
+        .loan-card h3 {
+            color: #0d3b73;
+            font-size: 25px;
+        }
+
+        .loan-card .amount {
+            font-size: 32px;
+            font-weight: bold;
+            color: #e49b00;
+            margin: 10px 0;
+        }
+
+        .loan-card p {
+            color: #667085;
+        }
+
+        /* ================= CALCULATOR ================= */
+
+        .calculator {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 10px 35px rgba(20,40,80,0.08);
+        }
+
+        .calculator label {
+            display: block;
+            font-weight: bold;
+            margin: 18px 0 8px;
+            color: #24324a;
+        }
+
+        .calculator select,
+        .calculator input {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #d6dce5;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .result {
+            background: #eef5ff;
+            border-left: 5px solid #0d3b73;
+            padding: 22px;
+            margin-top: 25px;
+            border-radius: 8px;
+        }
+
+        .result strong {
+            color: #0d3b73;
+        }
+
+        /* ================= PROCESS ================= */
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .step {
+            text-align: center;
+            background: white;
+            padding: 28px 20px;
+            border-radius: 15px;
+            border: 1px solid #e5e9f0;
+        }
+
+Mkorea Goat, [10/3/2026 2:35 PM]
+.step-number {
+            width: 50px;
+            height: 50px;
+            margin: auto auto 15px;
+            border-radius: 50%;
+            background: #0d3b73;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .step h3 {
+            color: #0d3b73;
+            margin-bottom: 8px;
+        }
+
+        .step p {
+            color: #667085;
+            font-size: 14px;
+        }
+
+        /* ================= APPLICATION ================= */
+
+        .application-section {
+            background: #eef3f9;
+        }
+
+        .application-box {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 10px 35px rgba(20,40,80,0.08);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        .form-group {
+            margin-bottom: 5px;
+        }
+
+        .form-group.full {
+            grid-column: 1 / -1;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 7px;
+            color: #24324a;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #d6dce5;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .required-note {
+            background: #fff8e8;
+            border-left: 4px solid #e5a000;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+
+        .fee-notice {
+            background: #edf8f1;
+            border-left: 4px solid #24934d;
+            padding: 18px;
+            margin: 20px 0;
+            border-radius: 6px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: #0d3b73;
+            color: white;
+            border: none;
+            padding: 16px;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .submit-btn:hover {
+            background: #092c57;
+        }
+
+        /* ================= AREA ================= */
+
+        .area-box {
+            background: #0d3b73;
+            color: white;
+            padding: 50px;
+            border-radius: 18px;
+            text-align: center;
+        }
+
+        .area-box h2 {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .area-box p {
+            color: #dceaff;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background: #081d36;
+            color: white;
+            padding: 45px 25px 25px;
+        }
+
+        .footer-grid {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        footer h3 {
+            margin-bottom: 12px;
+        }
+
+        footer p,
+        footer li {
+            color: #b8c5d6;
+            font-size: 14px;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer li {
+            margin-bottom: 7px;
+        }
+
+        .copyright {
+            max-width: 1200px;
+            margin: 35px auto 0;
+            padding-top: 20px;
+            border-top: 1px solid #29405c;
+            color: #8fa1b7;
+            font-size: 13px;
+        }
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 850px) {
+
+            nav {
+                display: none;
+            }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+            }
+
+Mkorea Goat, [10/3/2026 2:35 PM]
+.hero h1 {
+                font-size: 39px;
+            }
+
+            .notice-grid,
+            .loan-grid,
+            .process-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            section {
+                padding: 55px 18px;
+            }
+
+            .navbar {
+                padding: 12px 15px;
+            }
+
+            .hero {
+                padding: 60px 18px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .notice-grid,
+            .loan-grid,
+            .process-grid,
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-group.full {
+                grid-column: auto;
+            }
+
+            .calculator,
+            .application-box {
+                padding: 22px;
+            }
+
+            .area-box {
+                padding: 35px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+    <div class="navbar">
+
+        <div class="logo-area">
+            <div class="logo-circle">PC</div>
+
+            <div class="logo-text">
+                <h2>PIONEER CREDIT</h2>
+                <span>LIMITED</span>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#loans">Loans</a>
+            <a href="#how">How It Works</a>
+            <a href="#calculator">Calculator</a>
+            <a href="#apply" class="nav-button">Apply Now</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-container">
+
+        <div>
+
+            <h1>
+                Grow Your Business With
+                <span>Pioneer Credit</span>
+            </h1>
+
+            <p>
+                Flexible business financing from KSh 10,000 to KSh 150,000.
+                Apply online, book your assessment and let our team visit your
+                business for an assessment.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#apply" class="primary-btn">
+                    Apply for Financing
+                </a>
+
+                <a href="#calculator" class="secondary-btn">
+                    Calculate Repayment
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <h3>Business Financing</h3>
+
+            <div class="loan-highlight">
+                KSh 10K – 150K
+            </div>
+
+            <p>
+                Financing designed for traders, farmers and businesses
+                that need additional capital to grow.
+            </p>
+
+            <br>
+
+            <p>
+                <strong>Assessment:</strong> Within 2–5 days after application.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= NOTICES ================= -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Important Information</h2>
+
+            <p>
+                Please understand the assessment and application process
+                before submitting your request.
+            </p>
+
+        </div>
+
+
+        <div class="notice-grid">
+
+            <div class="notice">
+
+                <div class="notice-icon">1</div>
+
+                <h3>Assessment Fee</h3>
+
+                <p>
+                    A KSh 387 assessment/service fee is required before
+                    the assessment. The fee helps cover transport and
+                    assessment-related costs.
+                </p>
+
+            </div>
+
+
+            <div class="notice">
+
+                <div class="notice-icon">2</div>
+
+                <h3>Refund Policy</h3>
+
+                <p>
+                    If Pioneer Credit fails to attend the scheduled
+                    assessment, the KSh 387 assessment fee is refundable.
+                </p>
+
+Mkorea Goat, [10/3/2026 2:35 PM]
+</div>
+
+
+            <div class="notice">
+
+                <div class="notice-icon">3</div>
+
+                <h3>Assessment Period</h3>
+
+                <p>
+                    Assessments are normally carried out within
+                    2–5 days after an application has been submitted.
+                </p>
+
+            </div>
+
+
+            <div class="notice">
+
+                <div class="notice-icon">4</div>
+
+                <h3>Business Assessment</h3>
+
+                <p>
+                    The assessment helps determine whether the applicant
+                    qualifies and the financing amount that can be offered.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= LOANS ================= -->
+
+<section id="loans">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Our Financing Options</h2>
+
+            <p>
+                Choose the amount that best suits your business needs.
+                Final financing is subject to assessment.
+            </p>
+
+        </div>
+
+
+        <div class="loan-grid">
+
+            <div class="loan-card">
+                <h3>Starting From</h3>
+                <div class="amount">KSh 10,000</div>
+                <p>
+                    Suitable for smaller business needs.
+                    Repayment period up to 3 months.
+                </p>
+            </div>
+
+
+            <div class="loan-card">
+                <h3>Growing Businesses</h3>
+                <div class="amount">KSh 20K – 50K</div>
+                <p>
+                    Financing for businesses requiring additional
+                    working capital. Terms may extend up to 6 months.
+                </p>
+            </div>
+
+
+            <div class="loan-card">
+                <h3>Larger Financing</h3>
+                <div class="amount">KSh 55K – 100K</div>
+                <p>
+                    Larger business financing with repayment periods
+                    of up to 8 months.
+                </p>
+            </div>
+
+
+            <div class="loan-card">
+                <h3>Business Expansion</h3>
+                <div class="amount">KSh 105K – 150K</div>
+                <p>
+                    Financing for established businesses requiring
+                    larger amounts. Terms may extend up to 10 months.
+                </p>
+            </div>
+
+
+            <div class="loan-card">
+                <h3>Flexible Amounts</h3>
+                <div class="amount">KSh 10K+</div>
+                <p>
+                    Amounts are available in KSh 5,000 increments:
+                    10K, 15K, 20K, 25K and so on.
+                </p>
+            </div>
+
+
+            <div class="loan-card">
+                <h3>Assessment Based</h3>
+                <div class="amount">Up to 150K</div>
+                <p>
+                    The amount finally offered depends on the
+                    assessment of the applicant's business.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CALCULATOR ================= -->
+
+<section id="calculator" style="background:#eef3f9;">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Repayment Calculator</h2>
+
+            <p>
+                Select your preferred financing amount and repayment period
+                to see an estimated repayment.
+            </p>
+
+        </div>
+
+
+        <div class="calculator">
+
+            <label for="loanAmount">
+                Financing Amount
+            </label>
+
+            <select id="loanAmount" onchange="updateTenureOptions(); calculateLoan();">
+
+                <option value="10000">KSh 10,000</option>
+                <option value="15000">KSh 15,000</option>
+                <option value="20000">KSh 20,000</option>
+                <option value="25000">KSh 25,000</option>
